@@ -1,0 +1,186 @@
+$orange:#F8A22F;
+
+.orange {
+    color: $orange;
+    font-size: 4rem;
+}
+
+.header {
+    
+    background: url("./images/top.png") rgba($color: #ffffff, $alpha: 0.9);
+    background-position: top right;
+    background-size: 65%;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 80%;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-row-gap: 20px;
+}
+
+.header-logo {
+    margin-top: 3rem;
+    grid-column: 1 / 2;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+
+}
+
+
+.header-navigation {
+    margin-top: 3rem;
+    grid-column: 3 / 6;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    
+}
+
+.header-navigation-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-navigation p {
+    font-size: 1.3rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-self: start;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.header-navigation p:nth-child(1):hover, .header-navigation p:nth-child(2):hover, .header-navigation p:nth-child(3):hover {
+    color: $orange;
+}
+
+#contact {
+    padding: 0.8rem;
+    background: $orange;
+    border-radius: 30px;
+}
+
+#contact:hover {
+    color: $orange;
+    background-color: #ffffff;
+}
+
+.header-title {
+    grid-column: 1 / 3;
+    margin: 15rem auto 10rem auto;
+}
+
+.header-subtitle {
+    margin: 3rem 0 4rem 0;
+}
+
+
+.header-icons {
+    grid-column: 1 / 2;
+}
+
+.header-scroll-down {
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: center;
+}
+
+#scroll-down {
+    cursor: pointer;
+    animation: flashing 2s linear infinite forwards ;
+}
+
+
+
+@keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 860px) {
+    * {
+        font-size: 15px;
+    }
+
+    .header-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-navigation {
+        grid-column: 2 / 3;
+        justify-self: right;
+        justify-content: right;
+        justify-items: right;
+    }
+
+    .header-navigation-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100vw;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: 0.9);
+        z-index: 9999;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    
+
+    .hamburger {
+        display:  block;
+        text-align: right;
+        fill: #ffffff;
+        cursor: pointer;
+    }
+
+    .header-title {
+        margin: 6rem 0;
+    }
+
+    .header-icons {
+        grid-column: 1 / 3;
+    }
+    
+    .header-scroll-down {
+        grid-column: 1 / 3;
+        margin-top: 2rem;
+       
+    }
+}

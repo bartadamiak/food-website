@@ -1,0 +1,71 @@
+@import "./parts/header.scss";
+@import "./parts/our-food.scss";
+@import "./parts/plans.scss";
+@import "./parts/contact.scss";
+@import "./parts/foooter.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17px;
+    scroll-behavior: smooth;
+}
+
+$orange:#F8A22F;
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.order-btn {
+    background: $orange;
+    border-radius: 43px;
+    max-width: 230px;
+    width: 70%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transition: 0.4s;
+
+}
+
+.order-btn:hover {
+    color: $orange;
+    background-color: #ffffff;
+    border: 1px solid $orange
+}
+
+
+@keyframes mobileStart {
+    from {
+        transform: translate(-2000px, 0);
+    };
+    to {
+        transform: translate(0);
+    }
+}
+
+
+.mobileIn {
+    animation: mobileStart 0.5s linear 1 normal forwards;
+}
+

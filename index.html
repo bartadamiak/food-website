@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Food Website</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-grid container">
+            <div class="header-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+
+
+            <nav class="header-navigation">
+                <div class="header-navigation-menu ">
+                    <p id="about-btn">about</p><p id="our-food-btn">our food</p><p id="plans-btn">plans</p><p
+                    id="contact">contact us</p>
+                </div>
+                
+                    <svg class="hamburger" viewBox="0 0 100 80" width="40" height="40">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                        <rect y="60" width="100" height="20"></rect>
+                      </svg>
+            </nav>
+          
+
+            <div class="header-title" id="about">
+                <h1>
+                    Have no time to prepare <span class="orange">food</span>?
+                </h1>
+                <p class="header-subtitle">
+                    Choose one of our plans, enter delivery time
+                    and enjoy delicious food without leaving your home!
+                </p>
+
+                <div class="header-button order-btn">
+                    Order Food
+                </div>
+            </div>
+
+            <div class="header-icons">
+                <img src="./images/social.png" alt="">
+            </div>
+
+            <div class="header-scroll-down">
+                <img src="./images/btn.png" id="scroll-down" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="our-food" id="our-food">
+        <div class="our-food-content container">
+            <div class="our-food-container">
+                <h2>
+                    our food
+                </h2>
+                <ul class="our-food-list">
+                    <li>
+                        <p class="our-food-big">Signature Pizzas</p>
+                        <p class="our-food-small">
+                            Choose one of our plans, enter delivery time.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="our-food-big">Oven-Baked Subs</p>
+                        <p class="our-food-small">
+                            Choose one of our plans, enter delivery time
+                            and enjoy delicious food without leaving your home!
+                        </p>
+                    </li>
+                    <li>
+                        <p class="our-food-big">
+                            Wings, Sides & More
+                        </p>
+                        <p class="our-food-small">
+                            Choose one of our plans, enter delivery time.
+                        </p>
+                    </li>
+
+                </ul>
+                <div class="order-btn">
+                    Order Food
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="plans" id="plans">
+        <h2>
+            plans
+        </h2>
+        <div class="plans-grid container">
+            <div class="plans-box">
+                <img src="./images/photo1.png" alt="">
+            </div>
+            <div class="plans-box">
+                <img src="./images/photo2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact-us">
+        <div class="contact-grid container">
+            <h2 class="contact-header">
+                Contact us
+            </h2>
+            <div class="form-box">
+                <form action="" name="form" id="form">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="text" id="phone" name="phone" placeholder="Phone">
+                    <textarea name="message" id="message" form="form">Your message</textarea>
+                    <div><input type="checkbox" name="checkbox" id="checkbox"><label for="checkbox">I agree with all
+                            conditions</label></div>
+                </form>
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+            <div class="contact-box">
+                <div class="contact-photo">
+                    <img src="./images/contact-photo.png" alt="">
+                </div>
+                <div class="contact-text">
+                    <p class="contact-box-title">Contact</p> <br>
+                    <strong>City: </strong> Warsaw <br>
+                    <strong>Street: </strong> Szaserów <br>
+                    <strong>Tel: </strong> 000-000-000 <br>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-logo">
+                <img src="./images/footer-logo.png" alt="">
+            </div>
+            <div class="footer-contact">
+                <p><strong>Contact</strong></p>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="footer-navigation">
+                <ul>
+                    <li><strong>
+                        Contact
+                    </strong>  </li>
+                    <li>About</li>
+                    <li>Plans</li>
+                    <li>Pizza</li>
+                </ul>
+            </div>
+          
+            <div class="footer-social">
+                <p>
+                 <strong>   Fallow us</strong>
+                </p>
+                <img src="./images/footer-icons.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
